@@ -1,6 +1,9 @@
 name: Sync Fork with Upstream
 
 on:
+  push:
+    branches:
+      - workflow-custom  # use the actual branch name if different
   schedule:
     - cron: '0 * * * *' # every hour
   workflow_dispatch:
